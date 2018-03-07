@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDesenvolupador"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtNom"
+            android:layout_below="@+id/txtNom"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/txtGenere"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtDesenvolupador"
+            android:layout_below="@+id/txtDesenvolupador"
+            android:layout_marginTop="15dp"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/txtJugador"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNom"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/txtDesenvolupador"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/txtEdat"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtGenere"
+            android:layout_alignBottom="@+id/txtGenere"
+            android:layout_alignStart="@+id/txtJugador"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:inputType="number"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
